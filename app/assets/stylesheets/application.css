@@ -36,57 +36,48 @@
 
 
 .new {
-	padding: 33px;
+	margin: 33px;
 }
 .new-title {
 	font-size: 26px;
 }
-
 table {
 	padding: 10px 3px;
 	font-size: 13px;
 }
-
 th {
 	text-align: center;
 	padding: 0 5px 7px;
 }
-
 td {
 	padding: 0 5px 7px;
 }
-
-.new-newbook {
-
-}
-
 .new-titlebody {
 	font-size: 13px;
 	padding-top: 10px;
 }
-
 .new-f.text {
-	margin-bottom: 7px;
+	padding-bottom: 7px;
 }
-
-.new-createbook {
+.new-button {
 	padding: 10px 0;
 }
+
 
 
 .show {
 	padding: 33px 28px;
 	font-size: 13px;
 }
-
-.show-text1 {
-	padding: 0px 40px 30px;
+.show-container {
+	padding: 0 38px;
 }
-
+.show-text1 {
+	padding-bottom: 34px;
+}
 .show-text2 {
 	padding: 3px 5px;
 }
-
 .edit {
 	padding: 26px 33px;
 }
@@ -99,4 +90,20 @@ td {
 }
 .edit-button {
 	padding-top: 10px;
+}
+
+
+.success {
+	color: #228B22;
+}
+.new-success {
+	font-size: 13px;
+	color: #228B22;
+	padding: 0 33px 27px;
+}
+
+.error {
+	font-size: 20px;
+	font-weight: bold;
+	color: tomato;
 }
