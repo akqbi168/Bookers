@@ -6,18 +6,13 @@
 
 
 
-
-
-
-
-
 <table>
 	<thead class="new-thead">
 		<tr>
 			<th>Title</th>
 			<th>Body</th>
 			<th colspan="3"></th>
-<!-- 			<th>D1</th>
+ 		<!--<th>D1</th>
 			<th>E1</th> -->
 		</tr>
 	</thead>
@@ -26,9 +21,9 @@
 			<tr>
 				<td><%= book.title %></td>
 				<td><%= book.body %></td>
-				<td><%= link_to 'Show', show_path(@book.id) %></td>
-				<td><%= link_to 'Edit', edit_book_path(@book.id) %></td>
-				<td><%= link_to 'Destroy', book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %></td>
+				<td><%= link_to 'Show', book_path(book.id) %></td>
+				<td><%= link_to 'Edit', edit_book_path(book.id) %></td>
+				<td><%= link_to 'Destroy', book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %></td>
 			</tr>
 		<% end %>
 		<tr>
@@ -50,7 +45,7 @@
 			<td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
 			<td>Show</td>
 			<td>Edit</td>
-			<td>Destroy</td>
+			<td></td>
 		</tr>
 	</tbody>
 </table>

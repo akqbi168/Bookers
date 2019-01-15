@@ -72,3 +72,31 @@ td {
 .new-createbook {
 	padding: 10px 0;
 }
+
+
+.show {
+	padding: 33px 28px;
+	font-size: 13px;
+}
+
+.show-text1 {
+	padding: 0px 40px 30px;
+}
+
+.show-text2 {
+	padding: 3px 5px;
+}
+
+.edit {
+	padding: 26px 33px;
+}
+.edit-title {
+	font-size: 26px;
+}
+.edit-text {
+	font-size: 13px;
+	padding-top: 12px;
+}
+.edit-button {
+	padding-top: 10px;
+}
