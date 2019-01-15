@@ -26,7 +26,7 @@
 				<td><%= link_to 'Destroy', book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %></td>
 			</tr>
 		<% end %>
-		<tr>
+<!-- 	<tr>
 			<td>リーダブルコード</td>
 			<td>より良いコードを書くためのサンプルで実践的なテクニック</td>
 			<td>Show</td>
@@ -45,8 +45,8 @@
 			<td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
 			<td>Show</td>
 			<td>Edit</td>
-			<td></td>
-		</tr>
+			<td>Destroy</td>
+		</tr> -->
 	</tbody>
 </table>
 
@@ -61,12 +61,12 @@
 
 	<p class="new-titlebody">Title</p>
 	<div class="new-f.text">
-		<%= f.text_field :title %>
+		<%= f.text_field :title, class: "book_title" %>
 	</div>
 
 	<p class="new-titlebody">Body</p>
 	<div class="new-f.text">
-		<%= f.text_area :body %>
+		<%= f.text_area :body, class: "book_body" %>
 	</div>
 
 	<div class="new-createbook">

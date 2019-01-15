@@ -3,7 +3,7 @@
 
 
 	<!-- form_for部分 -->
-	<%= form_for(@book) do |f|%>
+	<%= form_for(@book) do |f| %>
 		<p class="edit-text">Title</p>
 		<%= f.text_field :title %>
 		<p class="edit-text">Body</p>
@@ -12,6 +12,6 @@
 	<% end %>
 
 	<p class="edit-text">
-		<%= link_to "Show", edit_book_path(@book.id) %> | 	<%= link_to "Back", new_book_path(@book.id) %>
+		<%= link_to "Show", edit_book_path(@book.id) %> | <%= link_to "Back", new_book_path(@book.id) %>
 	</p>
 </div>
