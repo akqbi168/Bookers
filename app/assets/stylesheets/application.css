@@ -14,10 +14,61 @@
  *= require_self
  */
 
-h1 {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #444;
+	font-family: verdana, arial, helvetica, sans-serif;
+ }
+
+.index-title {
+	margin: 23px 33px 0;
+	font-size: 26px;
+}
+
+.index-body {
+	font-size: 13px;
+	line-height: 18px;
+	margin: 33px 65px;
+}
+
+
+
+.new {
+	padding: 33px;
+}
+.new-title {
+	font-size: 26px;
+}
+
+table {
+	padding: 10px 3px;
+	font-size: 13px;
+}
+
+th {
+	text-align: center;
+	padding: 0 5px 7px;
+}
+
+td {
+	padding: 0 5px 7px;
+}
+
+.new-newbook {
 
 }
 
-p {
+.new-titlebody {
+	font-size: 13px;
+	padding-top: 10px;
+}
 
+.new-f.text {
+	margin-bottom: 7px;
+}
+
+.new-createbook {
+	padding: 10px 0;
 }
