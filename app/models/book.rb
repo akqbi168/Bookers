@@ -4,15 +4,15 @@ class Book < ApplicationRecord
 	#Bodyが入力されていない場合エラーを返す
 	# validates :body, presence: true
 
-	validates :add_error_sample
+	validate :add_error_sample
 
 	def add_error_sample
 		if title.blank?
-			error[:base] << "Title項目が空欄です。"
+			errors[:title] << "※タイトルを入力してください。"
 		end
 
 		if body.blank?
-			error[:base] << "Body項目が空欄です。"
+			errors[:body] << "※本文を入力してください。"
 		end
 	end
 end

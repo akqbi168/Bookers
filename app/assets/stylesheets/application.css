@@ -22,17 +22,16 @@
 	font-family: verdana, arial, helvetica, sans-serif;
  }
 
+
 .index-title {
 	margin: 23px 33px 0;
 	font-size: 26px;
 }
-
 .index-body {
 	font-size: 13px;
 	line-height: 18px;
 	margin: 33px 65px;
 }
-
 
 
 .new {
@@ -62,7 +61,6 @@ td {
 .new-button {
 	padding: 10px 0;
 }
-
 
 
 .show {
@@ -102,8 +100,10 @@ td {
 	padding: 0 33px 27px;
 }
 
+
 .error {
-	font-size: 20px;
+	font-size: 13px;
 	font-weight: bold;
-	color: tomato;
+	color: red;
+	padding-left: 13px;
 }

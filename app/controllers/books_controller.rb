@@ -13,14 +13,25 @@ class BooksController < ApplicationController
 	end
 
 	def create
-		book = Book.new(book_params)
-		if book.save
+		@book = Book.new(book_params)
+
+		# 通常 -------------------------
+		# book.save
+		# flash[:notice] = "Book was successfully created."
+		# redirect_to book_path(book.id)
+			# redirect_to book_path(book.id), notice: "Book was successfully created."
+		# ------------------------------
+
+		# エラーメッセージを表示する場合 ---
+		if @book.save
 			flash[:notice] = "Book was successfully created."
-			redirect_to book_path(book.id)
+			redirect_to book_path(@book.id)
 			# redirect_to book_path(book.id), notice: "Book was successfully created."
 		else
+			@books = Book.all
 			render 'new'
 		end
+		# ------------------------------
 	end
 
 	def edit
